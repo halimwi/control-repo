@@ -20,5 +20,5 @@ mod "puppet/hiera"
 #  :branch => 'docs_experiment'
 
 # Include Metrics collection
-mod "npwalker/pe_metric_curl_cron_jobs"
+mod "npwalker/pe_metric_curl_cron_jobs",
   :git  => 'https://github.com/npwalker/pe_metric_curl_cron_jobs'
