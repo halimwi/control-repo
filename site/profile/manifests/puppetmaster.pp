@@ -2,9 +2,9 @@ class profile::puppetmaster (
   $hiera_yaml = "${::settings::confdir}/hiera.yaml"
 ){
   # Default Packages
-  package { 'hiera-eyaml':
+  package { ['hiera-eyaml', 'deep_merge']:
     ensure   => present,
-    provider => puppet_gem,
+    provider => puppetserver_gem,
   }
   # Metric Collection
   include pe_metric_curl_cron_jobs
@@ -16,12 +16,11 @@ class profile::puppetmaster (
       'osfamily/%{::osfamily}',
       'common',
     ],
-    eyaml      => true,
+    #eyaml      => true,
     hiera_yaml => $hiera_yaml,
     datadir    => '/etc/puppetlabs/code/environments/%{environment}/hieradata',
     owner      => 'pe-puppet',
     group      => 'pe-puppet',
     notify     => Service['pe-puppetserver'],
-    require    => Package['hiera-eyaml'],
   }
 }

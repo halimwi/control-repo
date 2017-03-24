@@ -31,10 +31,33 @@ puppet_enterprise::profile::orchestrator::java_args:
   Xms: '64m'
   'XX:+UseG1GC': ''
 
-# Common Packages
-profile::base::packages:
+# Linux Common Packages
+profile::base::linux::packages:
   - vim
   - git
   - screen
   - wget
   - curl
+  - telnet
+
+# Windows Common Packages
+profile::base::windows::packages:
+  - googlechrome
+  - javaruntime
+  - winrar
+  - 7zip.install
+  - notepadplusplus.install
+  - git.install
+  - putty.install
+
+# Solaris Common Packages
+profile::base::solaris::packages:
+  - vim
+  - git
+  - screen
+  - wget
+  - curl
+  - gnu-tar
+  - telnet
+  - sudo
+  - ntp

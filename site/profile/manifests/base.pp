@@ -1,9 +1,22 @@
 class profile::base (
- $packages
+  Optional[Array] $packages = hiera_array('profile::base::packages', undef)
 ) {
-
-  include ::ntp
-  package { $packages :
-    ensure  => present,
+  case $::kernel {
+    'Windows': {
+      class { 'profile::base::windows':
+        packages => $packages,
+      }
+    }
+    'Linux': {
+      class { 'profile::base::linux':
+        packages => $packages,
+      }
+    }
+    'SunOS': {
+      class { 'profile::base::solaris':
+        packages => $packages,
+      }
+    }
+    default: {  }
   }
 }
