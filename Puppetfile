@@ -35,6 +35,4 @@ mod 'puppetlabs-powershell'
 mod 'puppetlabs-registry'
 mod 'puppetlabs-chocolatey'
 
-
-# Pelican testing
-mod 'stankevich-python'
+mod 'puppetlabs-vcsrepo'
