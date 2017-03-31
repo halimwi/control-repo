@@ -32,3 +32,4 @@ mod 'puppetlabs-powershell'
 mod 'puppetlabs-registry'
 mod 'puppetlabs-chocolatey'
 
+mod 'puppetlabs-firewall', '1.8.2'
