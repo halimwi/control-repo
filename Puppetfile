@@ -33,3 +33,7 @@ mod 'puppetlabs-registry'
 mod 'puppetlabs-chocolatey'
 
 mod 'puppetlabs-firewall', '1.8.2'
+
+# Classifier management
+mod 'WhatsARanjit-node_manager'
+mod 'puppetlabs-pe_gem'
