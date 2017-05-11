@@ -37,3 +37,4 @@ mod 'puppetlabs-firewall', '1.8.2'
 # Classifier management
 mod 'WhatsARanjit-node_manager'
 mod 'puppetlabs-pe_gem'
+mod 'puppetlabs-accounts', '1.1.0'
