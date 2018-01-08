@@ -33,6 +33,8 @@ mod 'puppetlabs-registry'
 mod 'puppetlabs-chocolatey'
 
 #k8s
+mod 'puppetlabs-apt'
+mod 'stahnma-epel'
 mod 'puppet-archive'
 mod 'maestrodev-wget'
 mod 'puppetlabs-kubernetes',
