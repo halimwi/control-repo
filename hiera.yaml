@@ -26,3 +26,4 @@ hierarchy:
       - "virtual/%{facts.virtual}.yaml"
       - "osfamily/%{facts.os.family}.yaml"
       - "common.yaml"
+      - "kubernetes.yaml"

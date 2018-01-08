@@ -1,0 +1,3 @@
+---
+kubernetes::bootstrap_controller: true
+profile::kubernetes::helm: true
