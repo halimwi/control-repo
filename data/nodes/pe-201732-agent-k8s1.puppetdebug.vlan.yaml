@@ -1,4 +1,4 @@
 ---
 kubernetes::bootstrap_controller: true
-#profile::kubernetes::helm: true
-#profile::kubernetes::rook: false
+profile::kubernetes::helm: true
+profile::kubernetes::rook: false
