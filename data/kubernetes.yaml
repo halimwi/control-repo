@@ -1,5 +1,6 @@
 ---
 kubernetes::controller: true
+kubernetes::cni_version: 0.6.0
 kubernetes::ca_crt: |
   -----BEGIN CERTIFICATE-----
   MIIC/TCCAeWgAwIBAgIUXbNL62PvCnJZBJhIZyY/WYB01dcwDQYJKoZIhvcNAQEL
