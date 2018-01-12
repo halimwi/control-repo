@@ -12,6 +12,10 @@ class profile::kubernetes (
       Class['helm'] -> Class['rook']
     }
   }
+  host { $facts['fqdn']:
+    ip => $::ipaddress,
+    alias => [$facts['hostname'], 'kubernetes'],
+  }
 
 
 }
