@@ -14,7 +14,7 @@ class profile::kubernetes (
   }
   host { $facts['fqdn']:
     ip => $::ipaddress,
-    alias => [$facts['hostname'], 'kubernetes'],
+    host_aliases => [$facts['hostname'], 'kubernetes'],
   }
 
 
