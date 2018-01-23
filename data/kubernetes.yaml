@@ -317,8 +317,8 @@ kubernetes::bootstrap_token_expiration: MjAyNy0wMy0xMFQwMzoyMjoxMVoNCg==
 kubernetes::bootstrap_token_usage_bootstrap_authentication: dHJ1ZQ==
 kubernetes::bootstrap_token_usage_bootstrap_signing: dHJ1ZQ==
 
-kubernetes::kubernetes_version: 1.9.1
-kubernetes::kubernetes_package_version: 1.9.1
+kubernetes::kubernetes_version: 1.9.2
+kubernetes::kubernetes_package_version: 1.9.2
 kubernetes::container_runtime: docker
 kubernetes::kubernetes_fqdn: kubernetes
 kubernetes::bootstrap_controller_ip: 10.32.47.62
