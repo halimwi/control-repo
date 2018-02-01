@@ -37,7 +37,8 @@ mod 'puppetlabs-apt'
 mod 'stahnma-epel'
 mod 'puppet-archive'
 mod 'maestrodev-wget'
-mod 'puppetlabs-kubernetes'
+mod 'puppetlabs-kubernetes',
+    :git => 'https://github.com/puppetlabs/puppetlabs-kubernetes.git'
 mod 'puppetlabs-helm'
 mod 'puppetlabs-rook',
   :git => 'https://github.com/puppetlabs/puppetlabs-rook.git'
