@@ -28,6 +28,10 @@ mod "npwalker/pe_metric_curl_cron_jobs",
 mod "jarretlavallee/dockeragent",
   :git  => 'https://github.com/jarretlavallee/puppet-dockeragent'
 
+mod 'os_updates',
+  :git => 'https://github.com/beergeek/os_updates.git',
+  :branch => 'master'
+
 # Windows Modules
 mod 'puppetlabs-powershell'
 mod 'puppetlabs-registry'
