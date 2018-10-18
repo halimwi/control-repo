@@ -9,6 +9,7 @@ mod "puppetlabs/ntp"
 mod "puppetlabs/puppet_agent"
 mod "puppet/hiera"
 mod 'puppetlabs-puppetserver_gem'
+mod 'puppetlabs-exec', '0.3.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
